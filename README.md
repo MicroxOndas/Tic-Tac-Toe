@@ -24,7 +24,7 @@ pip install pygame
     ```bash
     python tictac.py
     ```
--Para la versión gráfica:
+- Para la versión gráfica:
     ```bash
     python tictac_remaster.py
     ```
