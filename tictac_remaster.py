@@ -62,35 +62,6 @@ mini_matriz = (
     ((35,105),(70,105),(105,105))
 )
 
-def menu():
-    
-    print('🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩')
-    print('🟩 #️⃣  🆒  🆒  Bienvenido a super tic tac toe   🆒  🆒 #️⃣  🟥')
-    print('🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩 🟥 🟩')
-    input('pulsa enter para comenzar...')
-
-    print()
-    print('Player 1: ')
-    name_1 = input('Nombre: ')
-
-    print('Jugador registrado como: \n' f'{name_1}')
-    print()
-    print('Player 2: ')
-    name_2 = input('Nombre: ')
-    print('Jugador registrado como: \n' f'{name_2}')
-
-    if name_1 == "": name_1 = "Player 1"
-    if name_2 == "": name_2 = "Player 2"
-
-    jugadores = {'Player_1': name_1,'Player_2': name_2}
-
-    jugadores['Totem_l_1'] = '🟢'
-    jugadores['Totem_l_2'] = '🔴'
-    jugadores['Totem_h_1'] = '🟩'
-    jugadores['Totem_h_2'] = '🟥'
-
-    return jugadores
-
 def crear_tablero(ancho=3,largo=3):
     tablero = list()
     for fila_1 in range(largo):
@@ -242,7 +213,6 @@ blurrA = pygame.image.load('static/Blurr4.png')
 blurrAz = pygame.image.load('static/Blurr5.png')
 
 fondo = pygame.transform.scale(fondo,(1000,1000))
- 
 blurr = pygame.transform.scale(blurr,(75,75))
 X = pygame.transform.scale(X,(75,75))
 O = pygame.transform.scale(O,(75,75))
@@ -398,10 +368,8 @@ while menu_loop:
                 if event.key == pygame.K_BACKSPACE:
                     text = text[:-1]
                 if event.key == pygame.K_RETURN:
-                    print('ENTER')
                     jugadores[f'Player_{n}'] = text
                     text = ""
-                    print(jugadores)
                     n+=1
             if event.type == pygame.QUIT:
                 game_over = True
@@ -535,61 +503,3 @@ while loop:
 print('Gracias por jugar :D')
 print('- MicroxOndas')
 pygame.quit()
-
-                
-
-
-
-
-
-
-
-
-matriz =                                                                                            [
-[
-    [
-                [[None], [None], [None]],
-                [[None], [None], [None]], 
-                [[None], [None], [None]]                                                            ],
-
-    [                          
-                                        [[None], [None], [None]], 
-                                        [[None], [None], [None]], 
-                                        [[None], [None], [None]]                                    ],
-
-    [                                                   
-                                                                [[None], [None], [None]], 
-                                                                [[None], [None], [None]], 
-                                                                [[None], [None], [None]]
-                                                                                        ]
-],
-
-[   [           [[None], [None], [None]], 
-                [[None], [None], [None]], 
-                [[None], [None], [None]]                                                           ],
-
-        [                               [[None], [None], [None]],                                
-                                        [[None], [None], [None]], 
-                                        [[None], [None], [None]]                                   ],
-
-        [                                                       [[None], [None], [None]], 
-                                                                [[None], [None], [None]], 
-                                                                [[None], [None], [None]]
-                                                                                        ]
-],
-
-    [   [       [[None], [None], [None]], 
-                [[None], [None], [None]], 
-                [[None], [None], [None]]                                                            ],
-
-        [                               [[None], [None], [None]], 
-                                        [[None], [None], [None]], 
-                                        [[None], [None], [None]]                                    ],
-
-    [                                                           [[None], [None], [None]], 
-                                                                [[None], [None], [None]], 
-                                                                [[None], [None], [None]]
-                                                                                                    ]
-]
-                                                                                                    ]
-

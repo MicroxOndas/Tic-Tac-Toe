@@ -1,14 +1,35 @@
-I'm just a beginner in coding ^.^
+# Tic-Tac-Toe
 
-You can download the .rar file to play de game by clicking in the .exe inside it or just check out the code in the .py files.
+Este es un proyecto simple de Tic-Tac-Toe implementado en Python. El proyecto incluye dos versiones: una basada en consola y otra con una interfaz gráfica creada con `pygame`.
 
-"tictac.py" is a console-based game, whereas "tictac_remaster" is the port of the game to a more visual and intuitive display.
-It is mainly constructed with pygame.
+## Descripción
 
-If you have any suggestion or petition feel free to tell me :D
+- **tictac.py**: Versión basada en consola del juego.
+- **tictac_remaster.py**: Versión con interfaz gráfica usando `pygame` para una experiencia más intuitiva.
 
-Hope you like this fun minigame.
-- MicroxOndas
+Puedes descargar el archivo `.rar` y ejecutar el juego desde el archivo `.exe` incluido, o inspeccionar el código fuente.
 
+## Instalación
 
-Pd: It is in spanish xd
+### Requisitos
+- Python 3.x
+- `pygame` para la versión gráfica.
+
+Para instalar `pygame`, ejecuta:
+```bash
+pip install pygame
+```
+### Ejecución
+- Para la versión de consola:
+    ```bash
+    python tictac.py
+    ```
+-Para la versión gráfica:
+    ```bash
+    python tictac_remaster.py
+    ```
+    > [!WARNING]
+    > Esta no se ejecutará correctamente si no se ha descargado la carpeta `static` que contiene los recursos necesarios.
+
+## Contribuciones
+Si tienes sugerencias o peticiones, ¡no dudes en comentarlas!
