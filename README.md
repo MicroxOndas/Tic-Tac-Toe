@@ -28,8 +28,8 @@ pip install pygame
     ```bash
     python tictac_remaster.py
     ```
-    > [!WARNING]
-    > Esta no se ejecutará correctamente si no se ha descargado la carpeta `static` que contiene los recursos necesarios.
+> [!WARNING]
+> Esta no se ejecutará correctamente si no se ha descargado la carpeta `static` que contiene los recursos necesarios.
 
 ## Contribuciones
 Si tienes sugerencias o peticiones, ¡no dudes en comentarlas!
